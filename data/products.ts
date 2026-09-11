@@ -34,7 +34,7 @@ type CatalogDefinition = {
 // yalnızca imageCount değerini güncellemek yeterlidir.
 export const catalogDefinitions: CatalogDefinition[] = [
   { slug: "madalyalar", title: "Madalya", codePrefix: "MAD", imageCount: 10 },
-  { slug: "kupalar", title: "Kupa", codePrefix: "KUP", imageCount: 22 },
+  { slug: "kupalar", title: "Kupa", codePrefix: "KUP", imageCount: 23 },
   {
     slug: "plaketler/album",
     title: "Albüm Plaket",
@@ -49,7 +49,7 @@ export const catalogDefinitions: CatalogDefinition[] = [
   { slug: "tabaklar/islemeli", title: "İşlemeli Tabak", codePrefix: "ISL", imageCount: 14, parentCategory: "tabaklar" },
   { slug: "masa-isimlik", title: "Masa İsimlik", codePrefix: "MSI", imageCount: 7, parentCategory: "isimlik" },
   { slug: "yaka-isimlik", title: "Yaka İsimlik", codePrefix: "YIS", imageCount: 2, parentCategory: "isimlik" },
-  { slug: "rozetler", title: "Yaka Rozeti", codePrefix: "ROZ", imageCount: 8 },
+  { slug: "rozetler", title: "Yaka Rozeti", codePrefix: "ROZ", imageCount: 10 },
   { slug: "bayraklar", title: "Türk Bayraklı Masa İsimliği", codePrefix: "BYR", imageCount: 5, imageExtension: "jpg" },
 ];
 
