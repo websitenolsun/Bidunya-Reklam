@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #ffffff;
+  color: #0f172a;
+  --font-playfair: "Playfair Display";
+  --font-jakarta: "Plus Jakarta Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: #1da7e8;
+  color: #ffffff;
+}

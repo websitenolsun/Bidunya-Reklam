@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="BIDUNYA logo">
+  <rect width="400" height="400" rx="80" fill="#0F1F4D"/>
+  <path d="M120 120h160c44 0 80 36 80 80s-36 80-80 80H120z" fill="#FFFFFF"/>
+  <path d="M160 160h120c22 0 40 18 40 40s-18 40-40 40H160z" fill="#F3C96B"/>
+  <path d="M187 132h84l-28 44h-84z" fill="#FFFFFF"/>
+  <path d="M187 228h84l-28 40h-84z" fill="#FFFFFF"/>
+  <circle cx="140" cy="200" r="28" fill="#FFFFFF"/>
+</svg>
