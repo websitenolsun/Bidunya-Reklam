@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { corporateLinks, navigationItems } from "@/data/categories";
 import { siteConfig } from "@/data/site";
 import { tr } from "@/lib/turkish";
@@ -12,7 +13,26 @@ type MobileMenuProps = {
 };
 
 export function MobileMenu({ open, onClose }: MobileMenuProps) {
+  const router = useRouter();
   const [activeGroup, setActiveGroup] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!open) {
+      return;
+    }
+
+    const hrefs = [
+      ...navigationItems.flatMap((item) => [
+        `/${item.slug}`,
+        ...(item.children?.map((child) => `/${child.slug}`) ?? []),
+      ]),
+      ...corporateLinks.map((link) => `/${link.slug}`),
+    ];
+
+    hrefs.forEach((href) => {
+      router.prefetch(href);
+    });
+  }, [open, router]);
 
   if (!open) {
     return null;
